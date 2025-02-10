@@ -10,4 +10,4 @@ try:
         if cpu_usage > threshold:
             print("Alert! CPU usage exceeds threshold: {cpu_usage}%")
 except KeyboardInterrupt:
-    print("Interrupted by user.")
+    print("Interrupted by user")
