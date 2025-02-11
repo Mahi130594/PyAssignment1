@@ -3,7 +3,7 @@ import os
 from flask import Flask, jsonify
 
 # Sample configuration file path
-config_file_path = 'configuration.cnf'
+config_file_path = 'configuration.ini'
 
 # Function to parse the configuration file
 def parse_config_file(file_path):
