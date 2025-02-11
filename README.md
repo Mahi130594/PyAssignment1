@@ -51,7 +51,7 @@ Output:
   
 
 
-### Q2:In DevOps, monitoring the health and performance of servers is crucial for ensuring smooth operation of infrastructure.
+## Q2:In DevOps, monitoring the health and performance of servers is crucial for ensuring smooth operation of infrastructure.
 
 Implementation:
 
@@ -71,7 +71,7 @@ Output: For testing the code threshold value changed to 1
 - ![image](https://github.com/user-attachments/assets/33265a46-184a-40fd-a5c4-5976deafabe6)
 
 
-#### Q3: Configuration File Parsing in DevOps?
+## Q3: Configuration File Parsing in DevOps?
 
 In DevOps, managing configuration files is crucial for automating infrastructure and ensuring consistency. Configuration files store essential settings, such as database credentials, server addresses, and application parameters. Automating the parsing of these files helps maintain uniformity and reduces manual errors.
 
