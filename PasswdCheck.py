@@ -10,11 +10,11 @@ def check_passwd_strength(Password):
     if len(Password) < 8:
         return False, "Passwd Must 8 Characters"
     if not any(char.islower() for char in Password) or not any(char.isupper() for char in Password):
-        return False, "Passwd Must contain upper and lower Characters"
+        return False, "Passwd Must contain the upper and lower Characters"
     if not any(char.isdigit() for char in Password):
-        return False, "Passwd Must contain one Digit"
+        return False, "Passwd Must contain the one Digit"
     if not Contain_Special_Char(password):
-        return False, " Passwd Must contain Special Character"
+        return False, " Passwd Must contain a Special Character"
     return True, "Passwd is Strong"
 password = input("Enter the Password: ")
 strongpwd, message = check_passwd_strength(password)
