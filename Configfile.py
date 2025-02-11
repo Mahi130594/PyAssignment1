@@ -1,11 +1,7 @@
 import json
 import os
 from flask import Flask, jsonify
-
-# Sample configuration file path
 config_file_path = 'configuration.ini'
-
-# Function to parse the configuration file
 def parse_config_file(file_path):
     config = {}
     try:
@@ -29,12 +25,10 @@ def parse_config_file(file_path):
         print(f"Error: {str(e)}")
         return None
 
-# Function to save parsed data as JSON (for database simulation)
 def save_to_json(data):
     with open('config_output.json', 'w') as json_file:
         json.dump(data, json_file, indent=4)
 
-# Create a Flask app to handle the GET request
 app = Flask(__name__)
 
 @app.route('/get-config', methods=['GET'])
@@ -46,7 +40,6 @@ def get_config():
     except FileNotFoundError:
         return jsonify({"error": "Configuration data not found"}), 404
 
-# Main program flow
 def main():
     config = parse_config_file(config_file_path)
     if config:
