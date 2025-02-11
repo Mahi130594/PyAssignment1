@@ -21,4 +21,4 @@ strongpwd, message = check_passwd_strength(password)
 if strongpwd:
     print(message)
 else:
-    print("Error", message)
+    print( "Error:", message)
